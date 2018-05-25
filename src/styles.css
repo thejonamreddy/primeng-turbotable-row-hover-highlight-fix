@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+.my-div {
+  width: 700px;
+  text-align: center;
+}
+
+.my-div .ui-table {
+  margin-left:50%;
+  margin-right: -50%;
+}
+
+.ui-table-frozen-view > .ui-table-scrollable-body > table > .ui-table-tbody > tr > td {
+  background-color: #EEE;
+}
