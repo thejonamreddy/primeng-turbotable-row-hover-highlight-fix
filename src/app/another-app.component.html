@@ -1,11 +1,4 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    {{ title }}
-  </h1>
-</div>
-
-<!-- The Solution -->
+<!-- The Another Solution -->
 <div class="my-div">
   <p-table [columns]="columns" [frozenColumns]="frozenColumns" [value]="users" [scrollable]="true" frozenWidth="100px" selectionMode="single">
     <ng-template pTemplate="frozenheader" let-columns>
@@ -14,7 +7,7 @@
       </tr>
     </ng-template>
     <ng-template pTemplate="frozenbody" let-rowData let-columns="columns">
-      <tr (mouseenter)="onMouseEnter(rowData)" (mouseleave)="onMouseLeave(rowData)" [class.row-hover]="rowData.hover">
+      <tr #frozenElRef (mouseenter)="onMouseEnter(frozenElRef)" (mouseleave)="onMouseLeave(frozenElRef)">
         <td *ngFor="let col of columns">{{rowData[col.field]}}</td>
       </tr>
     </ng-template>
@@ -24,16 +17,9 @@
       </tr>
     </ng-template>
     <ng-template pTemplate="body" let-rowData let-columns="columns">
-      <tr (mouseenter)="onMouseEnter(rowData)" (mouseleave)="onMouseLeave(rowData)" [class.row-hover]="rowData.hover">
+      <tr #unfrozenElRef (mouseenter)="onMouseEnter(unfrozenElRef)" (mouseleave)="onMouseLeave(unfrozenElRef)">
         <td *ngFor="let col of columns">{{rowData[col.field]}}</td>
       </tr>
     </ng-template>
   </p-table>
 </div>
-
-<br/>
-<br/>
-<br/>
-<br/>
-
-<another-app-root></another-app-root>

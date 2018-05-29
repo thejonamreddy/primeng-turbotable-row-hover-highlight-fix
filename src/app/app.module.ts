@@ -4,11 +4,13 @@ import { TableModule } from 'primeng/table';
 
 
 import { AppComponent } from './app.component';
+import { AnotherAppComponent } from './another-app.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AnotherAppComponent
   ],
   imports: [
     BrowserModule,
