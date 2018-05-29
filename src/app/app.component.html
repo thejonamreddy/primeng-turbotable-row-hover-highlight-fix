@@ -12,7 +12,7 @@
       </tr>
     </ng-template>
     <ng-template pTemplate="frozenbody" let-rowData let-columns="columns">
-      <tr>
+      <tr (mouseenter)="onMouseEnter(rowData)" (mouseleave)="onMouseLeave(rowData)" [class.row-hover]="rowData.hover">
         <td *ngFor="let col of columns">{{rowData[col.field]}}</td>
       </tr>
     </ng-template>
@@ -22,7 +22,7 @@
       </tr>
     </ng-template>
     <ng-template pTemplate="body" let-rowData let-columns="columns">
-      <tr>
+      <tr (mouseenter)="onMouseEnter(rowData)" (mouseleave)="onMouseLeave(rowData)" [class.row-hover]="rowData.hover">
         <td *ngFor="let col of columns">{{rowData[col.field]}}</td>
       </tr>
     </ng-template>

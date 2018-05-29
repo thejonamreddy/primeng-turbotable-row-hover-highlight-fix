@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -28,7 +29,15 @@ export class AppComponent implements OnInit {
       { 'id': '79761', 'firstName': 'Ron', 'lastName': 'Jacobi', 'city': 'Andersonmouth' },
       { 'id': '80148', 'firstName': 'Otis', 'lastName': 'Ferry', 'city': 'East Kennedifurt' },
       { 'id': '17744', 'firstName': 'Kirk', 'lastName': 'Bruen', 'city': 'Alisonside' }
-    ]
+    ];
+  }
+
+  onMouseEnter(rowData): void {
+    rowData.hover = true;
+  }
+
+  onMouseLeave(rowData): void {
+    rowData.hover = false;
   }
 
 }

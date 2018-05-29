@@ -9,10 +9,16 @@
   margin-right: -50%;
 }
 
-.ui-table-frozen-view > .ui-table-scrollable-body > table > .ui-table-tbody > tr > td {
+.ui-table-frozen-view > .ui-table-scrollable-body > table > .ui-table-tbody > tr {
   background-color: #EEE;
 }
 
-.ui-table-frozen-view > .ui-table-scrollable-body > table > .ui-table-tbody > tr > td:hover {
+.ui-table-frozen-view > .ui-table-scrollable-body > table > .ui-table-tbody > tr:hover {
   background-color: transparent;
+}
+
+.row-hover{
+  cursor: pointer;
+  background: #0073ea !important;
+  color: #ffffff !important;
 }
