@@ -12,3 +12,7 @@
 .ui-table-frozen-view > .ui-table-scrollable-body > table > .ui-table-tbody > tr > td {
   background-color: #EEE;
 }
+
+.ui-table-frozen-view > .ui-table-scrollable-body > table > .ui-table-tbody > tr > td:hover {
+  background-color: transparent;
+}
